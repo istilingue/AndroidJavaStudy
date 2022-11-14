@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Android Java Study</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">App Sorteio</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="play">Jogar</string>
+    <string name="previous">Previous</string>
+
+    <string name="press_and_receive">Pressione e receba um número de 0 a 10</string>
+    <string name="number_of_choice">Seu número é: %d</string>
+    <string name="no_number_selected">Nenhum número selecionado</string>
+</resources>
