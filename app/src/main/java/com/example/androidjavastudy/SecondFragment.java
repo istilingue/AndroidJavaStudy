@@ -11,6 +11,12 @@ import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.androidjavastudy.databinding.FragmentSecondBinding;
 
+import java.text.SimpleDateFormat;
+import java.util.Arrays;
+import java.util.Date;
+import java.util.List;
+import java.util.Random;
+
 public class SecondFragment extends Fragment {
 
     private FragmentSecondBinding binding;
@@ -26,16 +32,34 @@ public class SecondFragment extends Fragment {
 
     }
 
+    @Override
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
+        setDate();
+        setAuthor();
+
+        binding.buttonBack.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 NavHostFragment.findNavController(SecondFragment.this)
                         .navigate(R.id.action_SecondFragment_to_FirstFragment);
             }
         });
+    }
+
+    public void setAuthor(){
+        String[] authors = {"Lucas Stirling", "Nathalia Amorim", "Tacísio Neto", "Aline Marques", "João Santos", "Marcelo Gonçalves"};
+        int picker =(int) (Math.random()*authors.length);
+        String selectedAuthor = authors[picker];
+        binding.author.setText(selectedAuthor);
+    }
+
+    public void setDate(){
+        SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        Date currentDate = new Date();
+        String formattedDate = dateFormat.format(currentDate);
+        binding.date.setText(formattedDate);
     }
 
     @Override

@@ -9,6 +9,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import com.example.androidjavastudy.databinding.FragmentFirstBinding;
 
@@ -42,8 +43,8 @@ public class FirstFragment extends Fragment {
        int number = (int) (Math.random() * range);
 
        binding.counter.setText(getString(R.string.number_of_choice,number));
-       System.out.println("Seu numero é:" + number);
         });
+    binding.next.setOnClickListener(view -> Navigation.findNavController(view).navigate(R.id.action_FirstFragment_to_SecondFragment));
    }
 
 
