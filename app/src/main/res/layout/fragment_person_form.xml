@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonForm"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:paddingStart="8sp"
+        android:paddingTop="16sp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="@string/form"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/name"
+        android:autofillHints="name" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="8dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/email"
+        android:autofillHints="emailAddress" />
+   <EditText
+        android:layout_width="match_parent"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginVertical="8dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/username"
+        android:autofillHints="username" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_gravity="right"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

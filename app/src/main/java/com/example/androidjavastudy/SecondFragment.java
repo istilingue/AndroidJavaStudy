@@ -7,6 +7,7 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.androidjavastudy.databinding.FragmentSecondBinding;
@@ -46,6 +47,7 @@ public class SecondFragment extends Fragment {
                         .navigate(R.id.action_SecondFragment_to_FirstFragment);
             }
         });
+        binding.buttonForward.setOnClickListener(view1 -> Navigation.findNavController(view1).navigate(R.id.action_SecondFragment_to_PersonForm));
     }
 
     public void setAuthor(){

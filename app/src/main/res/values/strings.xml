@@ -2,18 +2,26 @@
     <string name="app_name">Android Java Study</string>
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">App Sorteio</string>
-    <string name="second_fragment_label">Second Fragment</string>
     <string name="next">Next</string>
     <string name="play">Jogar</string>
     <string name="previous">Previous</string>
 
+    <string name="first_fragment_label">App Sorteio</string>
     <string name="press_and_receive">Pressione e receba um número de 0 a 10</string>
     <string name="number_of_choice">Seu número é: %d</string>
     <string name="author">%s</string>
     <string name="no_number_selected">Nenhum número selecionado</string>
+<!--    Tela Texto-->
+    <string name="second_fragment_label">Edição de Imagem</string>
     <string name="background_image">Background image</string>
     <string name="celular">Celular</string>
     <string name="aprenda_edicao">Aprenda sobre edição de imagens</string>
     <string name="blank_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse pellentesque finibus est vel porttitor. Nulla molestie felis at risus ullamcorper, vel finibus elit laoreet. Morbi ullamcorper eros a elit sagittis, placerat imperdiet mi malesuada. Integer nec orci hendrerit, porttitor nibh eu, pellentesque ligula. Sed ornare nibh id posuere faucibus. Suspendisse et libero eu felis venenatis ultrices sed eu risus. Pellentesque diam enim, pretium et nibh ut, varius auctor velit. Sed sit amet est in justo mollis tempor. Nullam egestas vulputate ornare. Maecenas aliquam congue fermentum. Suspendisse et pretium libero. Suspendisse in lectus consectetur, dapibus tellus in, pharetra lacus.</string>
+    <!-- Tela formulário -->
+
+    <string name="form_fragment">Formulário</string>
+    <string name="form">Formulário</string>
+    <string name="name">Nome</string>
+    <string name="email">E-mail</string>
+    <string name="username">Username</string>
 </resources>
